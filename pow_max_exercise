@@ -1,0 +1,14 @@
+from math import pow
+your_int1 = int(input('Enter an integer >'))
+your_int2 = int(input('Enter an integer >'))
+
+ans1 = pow(your_int1,your_int2)
+ans2 = pow(your_int2,your_int1)
+
+ans_inp = int(ans1)
+ans_inp2 = int(ans2)
+max_of = max(ans_inp,ans_inp2)
+
+print(str(your_int1) + ' to the power of ' + str(your_int2) + ' is ' + str(ans_inp))
+print(str(your_int2) + ' to the power of ' + str(your_int1) + ' is ' + str(ans_inp2))
+print('the max of ' + str(ans_inp) + ' and ' + str(ans_inp2) + ' is ' + str(max_of))
